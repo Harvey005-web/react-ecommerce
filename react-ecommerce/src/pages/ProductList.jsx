@@ -31,7 +31,7 @@ const ProductList = () => {
     useEffect(() => {
         setLoading(true);
         setVisibleCount(ITEMS_PER_PAGE);
-        fetch("http://localhost:5000/api/products")
+        fetch("https://ecommerce-backend-l573.onrender.com/api/products")
             .then((res) => res.json())
             .then((data) => {
                 setAllProducts(data);
