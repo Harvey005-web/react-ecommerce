@@ -15,7 +15,7 @@ const SingleProduct = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch(`http://localhost:5000/api/products`)
+        fetch(`https://ecommerce-backend-l573.onrender.com/api/products`)
             .then(res => res.json())
             .then(data => {
                 const found = data.find(p => String(p.id) === String(id));
