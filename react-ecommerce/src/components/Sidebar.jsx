@@ -7,7 +7,7 @@ const Sidebar = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/categories")
+        fetch("https://ecommerce-backend-l573.onrender.com/api/categories")
             .then((res) => {
                 if (!res.ok) throw new Error("Failed to fetch categories");
                 return res.json();
